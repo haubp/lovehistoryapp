@@ -8,11 +8,11 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'Azure for Students(2dcfaa73-7c55-4a79-9203-4bd1d1084d00)'
-        appType: 'webApp'
-        WebAppName: 'test-dotnet-my-webapp'
-        VirtualApplication: 'Love History Webapp'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+      ConnectionType: 'AzureRM'
+      azureSubscription: 'Azure for Students(2dcfaa73-7c55-4a79-9203-4bd1d1084d00)'
+      appType: 'webApp'
+      WebAppName: 'test-dotnet-my-webapp'
+      VirtualApplication: 'Love History Webapp'
+      packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
