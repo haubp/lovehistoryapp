@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets/dating.jpeg"
     },
     {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/gian_nhau.jpg",
+      "PackagePath": "staticwebassets/gian_nhau.jpg"
+    },
+    {
       "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/qr.png",
       "PackagePath": "staticwebassets/qr.png"
     },

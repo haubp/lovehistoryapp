@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MdlZDx46SXcrdMWAogfY8ZN8fcLCtHbg4zxXFl6LXvY=",
+  "Hash": "2ULIHO90mJ1i6oKnJVT5eFj+tkpWtIcLnK+Eql4P8Gk=",
   "Source": "LoveHistoryWebApp",
   "BasePath": "_content/LoveHistoryWebApp",
   "Mode": "Default",
@@ -355,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/dating.jpeg"
+    },
+    {
+      "Identity": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/gian_nhau.jpg",
+      "SourceId": "LoveHistoryWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/",
+      "BasePath": "_content/LoveHistoryWebApp",
+      "RelativePath": "gian_nhau.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/gian_nhau.jpg"
     },
     {
       "Identity": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/LoveInfo.json",
