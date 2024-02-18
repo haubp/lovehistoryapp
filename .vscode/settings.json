@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": "LoveHistoryWebApp/bin/Release/net7.0/publish",
+    "appService.defaultWebAppToDeploy": "None"
+}

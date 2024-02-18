@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/LoveInfo.json",
+      "PackagePath": "staticwebassets/LoveInfo.json"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/all.css",
+      "PackagePath": "staticwebassets/css/all.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/all.min.css",
+      "PackagePath": "staticwebassets/css/all.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/brands.css",
+      "PackagePath": "staticwebassets/css/brands.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/brands.min.css",
+      "PackagePath": "staticwebassets/css/brands.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/fontawesome.css",
+      "PackagePath": "staticwebassets/css/fontawesome.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/fontawesome.min.css",
+      "PackagePath": "staticwebassets/css/fontawesome.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/regular.css",
+      "PackagePath": "staticwebassets/css/regular.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/regular.min.css",
+      "PackagePath": "staticwebassets/css/regular.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/solid.css",
+      "PackagePath": "staticwebassets/css/solid.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/solid.min.css",
+      "PackagePath": "staticwebassets/css/solid.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/svg-with-js.css",
+      "PackagePath": "staticwebassets/css/svg-with-js.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/svg-with-js.min.css",
+      "PackagePath": "staticwebassets/css/svg-with-js.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/v4-font-face.css",
+      "PackagePath": "staticwebassets/css/v4-font-face.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/v4-font-face.min.css",
+      "PackagePath": "staticwebassets/css/v4-font-face.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/v4-shims.css",
+      "PackagePath": "staticwebassets/css/v4-shims.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/v4-shims.min.css",
+      "PackagePath": "staticwebassets/css/v4-shims.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/v5-font-face.css",
+      "PackagePath": "staticwebassets/css/v5-font-face.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/v5-font-face.min.css",
+      "PackagePath": "staticwebassets/css/v5-font-face.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/dating.jpeg",
+      "PackagePath": "staticwebassets/dating.jpeg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/qr.png",
+      "PackagePath": "staticwebassets/qr.png"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/tailwind.min.css",
+      "PackagePath": "staticwebassets/tailwind.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-brands-400.ttf",
+      "PackagePath": "staticwebassets/webfonts/fa-brands-400.ttf"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-brands-400.woff2",
+      "PackagePath": "staticwebassets/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-regular-400.ttf",
+      "PackagePath": "staticwebassets/webfonts/fa-regular-400.ttf"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-regular-400.woff2",
+      "PackagePath": "staticwebassets/webfonts/fa-regular-400.woff2"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-solid-900.ttf",
+      "PackagePath": "staticwebassets/webfonts/fa-solid-900.ttf"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-solid-900.woff2",
+      "PackagePath": "staticwebassets/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets/webfonts/fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets/webfonts/fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.LoveHistoryWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.build.LoveHistoryWebApp.props",
+      "PackagePath": "build\\LoveHistoryWebApp.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.buildMultiTargeting.LoveHistoryWebApp.props",
+      "PackagePath": "buildMultiTargeting\\LoveHistoryWebApp.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.buildTransitive.LoveHistoryWebApp.props",
+      "PackagePath": "buildTransitive\\LoveHistoryWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

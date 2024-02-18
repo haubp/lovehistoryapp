@@ -1,0 +1,7 @@
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/LoveHistoryWebApp
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/appsettings.Development.json
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/appsettings.json
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/LoveHistoryWebApp.dll
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/LoveHistoryWebApp.deps.json
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/LoveHistoryWebApp.runtimeconfig.json
+/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/bin/Release/net7.0/publish/LoveHistoryWebApp.pdb
