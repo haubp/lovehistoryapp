@@ -63,6 +63,10 @@
             id="arguing" onclick="switchCounter(true)">
             <h2 class="text-2xl font-bold mb-4">Giận nhauu</h2>
             <p id="arguingTime" class="text-xl">0 seconds</p>
+            <div class="flex justify-center items-center">
+                <img id="gian-nhau-avatar" class="m-10 rounded-lg border-5 @(Model.isArgue ? "heartbeat-animation" : "")"
+                    src="~/gian_nhau.jpg" alt="Giannnn" width="200" height="200">
+            </div>
         </div>
     </div>
 </body>
@@ -100,6 +104,7 @@
                 totalArgueTime: totalArgueTime
             });
             document.getElementById('dating-avatar').classList.add('heartbeat-animation');
+            document.getElementById('gian-nhau-avatar').classList.remove('heartbeat-animation');
         } else if (!isArgue && isArguing) {
             // Send API update status from dating to argue
             startArguingDate = new Date();
@@ -110,6 +115,7 @@
                 totalArgueTime: totalArgueTime
             });
             document.getElementById('dating-avatar').classList.remove('heartbeat-animation');
+            document.getElementById('gian-nhau-avatar').classList.add('heartbeat-animation');
         }
 
         isArgue = !isArgue;
