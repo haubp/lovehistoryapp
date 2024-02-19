@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2ULIHO90mJ1i6oKnJVT5eFj+tkpWtIcLnK+Eql4P8Gk=",
+  "Hash": "nbQu3gZhLtzl3SaxR+M8qRmQ2M39zgQ2zxAwqjlz9MU=",
   "Source": "LoveHistoryWebApp",
   "BasePath": "_content/LoveHistoryWebApp",
   "Mode": "Default",
@@ -423,6 +423,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/tailwind.min.css"
+    },
+    {
+      "Identity": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/ThangDien.mp3",
+      "SourceId": "LoveHistoryWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/",
+      "BasePath": "_content/LoveHistoryWebApp",
+      "RelativePath": "ThangDien.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ThangDien.mp3"
     },
     {
       "Identity": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-brands-400.ttf",
