@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/LoveInfo.json"
     },
     {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/ThangDien.mp3",
+      "PackagePath": "staticwebassets/ThangDien.mp3"
+    },
+    {
       "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/css/all.css",
       "PackagePath": "staticwebassets/css/all.css"
     },

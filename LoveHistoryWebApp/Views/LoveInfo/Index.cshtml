@@ -25,9 +25,11 @@
         0% {
             transform: scale(1);
         }
+
         50% {
             transform: scale(1.1);
         }
+
         100% {
             transform: scale(1);
         }
@@ -37,6 +39,7 @@
         0% {
             transform: translateY(0);
         }
+
         100% {
             transform: translateY(-200vh) scale(4);
         }
@@ -47,29 +50,35 @@
     }
 </style>
 
-<body>
+<div>
     <div class="flex h-screen w-screen justify-between mt-20 mb-20">
         <div class="flex-1 text-center bg-pink-500 time-section @(Model.isArgue ? "" : "active") rounded-lg border-5 border-blue-500"
             id="dating" onclick="switchCounter(false)">
-            <h2 class="text-2xl font-bold mb-4">Bọn mình yêu nhauuu</h2>
+            <h2 class="text-2xl font-bold mb-4 mt-5">Bọn mình yêu nhauuu</h2>
             <p id="datingTime" class="text-xl">0 seconds</p>
             <div class="flex justify-center items-center">
                 <img id="dating-avatar" class="m-10 rounded-lg border-5 @(Model.isArgue ? "" : "heartbeat-animation")"
                     src="~/dating.jpeg" alt="Datingggg" width="200" height="200">
             </div>
-            <div class="w-200 h-50 bg-yellow"></div>            
         </div>
-        <div class="flex-1 text-center bg-gray-500 time-section @(Model.isArgue ? "active" : "") rounded-lg border-5 border-blue-500"
+        <div class="flex-1 text-center bg-gray-300 time-section @(Model.isArgue ? "active" : "") rounded-lg border-5 border-blue-500"
             id="arguing" onclick="switchCounter(true)">
-            <h2 class="text-2xl font-bold mb-4">Giận nhauu</h2>
+            <h2 class="text-2xl font-bold mb-4 mt-5">Giận nhauu</h2>
             <p id="arguingTime" class="text-xl">0 seconds</p>
             <div class="flex justify-center items-center">
-                <img id="gian-nhau-avatar" class="m-10 rounded-lg border-5 @(Model.isArgue ? "heartbeat-animation" : "")"
-                    src="~/gian_nhau.jpg" alt="Giannnn" width="200" height="200">
+                <img id="gian-nhau-avatar"
+                    class="m-10 rounded-lg border-5 @(Model.isArgue ? "heartbeat-animation" : "")" src="~/gian_nhau.jpg"
+                    alt="Giannnn" width="200" height="200">
             </div>
         </div>
     </div>
-</body>
+    <div class="fixed bottom-0 left-0 right-0 flex justify-center z-10">
+        <audio class="ml-auto mr-auto mb-5 rounded-lg border-2 border-purple-500" controls autoplay loop>
+            <source src="~/ThangDien.mp3" type="audio/mpeg">
+            Thằng Điên - Piano Version
+        </audio>
+    </div>
+</div>
 
 <script>
     let startDatingDate = new Date('@Model.startDatingDate');
