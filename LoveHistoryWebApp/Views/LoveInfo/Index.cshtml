@@ -48,6 +48,20 @@
     .animate-bubble {
         animation: bubble 6s ease-in forwards infinite;
     }
+
+    .image-card:hover {
+        animation: image-selection 1s forwards;
+    }
+
+    @@keyframes image-selection {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(4);
+        }
+    }
 </style>
 
 <div>
@@ -58,7 +72,25 @@
             <p id="datingTime" class="text-xl">0 seconds</p>
             <div class="flex justify-center items-center">
                 <img id="dating-avatar" class="m-10 rounded-lg border-5 @(Model.isArgue ? "" : "heartbeat-animation")"
-                    src="~/dating.jpeg" alt="Datingggg" width="200" height="200">
+                    src="/picture/dating.jpeg" alt="Datingggg" width="200" height="200">
+            </div>
+            <div class="flex m-20 justify-between">
+                @{
+                    for (int i = 1; i <= 5; i++)
+                    {
+                        string imagePath = $"/picture/dating{i}.jpeg";
+                        <div class="w-20 h-20">
+                            <img class="flex-1 m-2 rounded-lg image-card object-cover" src="@imagePath" alt="Image @i">
+                        </div>
+                    }
+                    for (int i = 1; i <= 2; i++)
+                    {
+                        string imagePath = $"/picture/dating{i}.jpg";
+                        <div class="w-20 h-20">
+                            <img class="flex-1 m-2 rounded-lg image-card object-cover" src="@imagePath" alt="Image @i">
+                        </div>
+                    }
+                }
             </div>
         </div>
         <div class="flex-1 text-center bg-gray-300 time-section @(Model.isArgue ? "active" : "") rounded-lg border-5 border-blue-500"
@@ -67,8 +99,14 @@
             <p id="arguingTime" class="text-xl">0 seconds</p>
             <div class="flex justify-center items-center">
                 <img id="gian-nhau-avatar"
-                    class="m-10 rounded-lg border-5 @(Model.isArgue ? "heartbeat-animation" : "")" src="~/gian_nhau.jpg"
+                    class="m-10 rounded-lg border-5 @(Model.isArgue ? "heartbeat-animation" : "")" src="~/picture/gian_nhau.jpg"
                     alt="Giannnn" width="200" height="200">
+            </div>
+            <div class="m-5">
+                <video class="w-full rounded-lg border-2 border-purple-500 p-10" controls controlsList="nodownload">
+                    <source src="~/video/gian_nhau_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
@@ -80,109 +118,13 @@
     </div>
 </div>
 
+<script src="~/script/Views/LoveInfo/script.js"></script>
+
 <script>
     let startDatingDate = new Date('@Model.startDatingDate');
     let startArguingDate = new Date('@Model.startArgueDate');
     let isArgue = @(Model.isArgue ? "true" : "false");
     let totalArgueTime = @Model.totalArgueTime;
-
-    function updateStatus(loveStatusObj) {
-        let url = "/loveinfo";
-
-        fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(loveStatusObj)
-        })
-    }
-
-    function switchCounter(isArguing) {
-        if (isArgue === isArguing) {
-            return;
-        }
-
-        if (isArgue && !isArguing) {
-            // Send API update status from argue to dating
-            totalArgueTime += Math.floor((new Date() - startArguingDate) / 1000);
-            updateStatus({
-                startDatingDate: startDatingDate,
-                startArgueDate: startArguingDate,
-                isArgue: false,
-                totalArgueTime: totalArgueTime
-            });
-            document.getElementById('dating-avatar').classList.add('heartbeat-animation');
-            document.getElementById('gian-nhau-avatar').classList.remove('heartbeat-animation');
-        } else if (!isArgue && isArguing) {
-            // Send API update status from dating to argue
-            startArguingDate = new Date();
-            updateStatus({
-                startDatingDate: startDatingDate,
-                startArgueDate: startArguingDate,
-                isArgue: true,
-                totalArgueTime: totalArgueTime
-            });
-            document.getElementById('dating-avatar').classList.remove('heartbeat-animation');
-            document.getElementById('gian-nhau-avatar').classList.add('heartbeat-animation');
-        }
-
-        isArgue = !isArgue;
-        document.getElementById('dating').classList.toggle('active');
-        document.getElementById('arguing').classList.toggle('active');
-    }
-
-    function fromDurationInSecondsToString(durationInSeconds) {
-        let seconds = Math.floor(durationInSeconds % 60);
-        let minutes = Math.floor((durationInSeconds / 60) % 60);
-        let hours = Math.floor((durationInSeconds / (60 * 60)) % 24);
-        let days = Math.floor((durationInSeconds / (60 * 60 * 24)) % 30.44);
-        let months = Math.floor((durationInSeconds / (60 * 60 * 24 * 30.44)) % 12);
-        let years = Math.floor(durationInSeconds / (60 * 60 * 24 * 365.25));
-
-        output = "";
-        output += `${years} năm `;
-        output += `${months} tháng `;
-        output += `${days} ngày `;
-        output += `${hours} giờ `;
-        output += `${minutes} phút `;
-        output += `${seconds} giây `;
-        return output;
-    }
-
-    function initTime() {
-        let currentDate = new Date();
-        document.getElementById('arguingTime').innerText = fromDurationInSecondsToString(totalArgueTime);
-        let durationInSeconds = Math.floor((currentDate - startDatingDate) / 1000 - totalArgueTime);
-        document.getElementById('datingTime').innerText = fromDurationInSecondsToString(durationInSeconds);
-    }
-
-    function updateCounters() {
-        let currentDate = new Date();
-
-        if (isArgue) {
-            let durationInSeconds = Math.floor((currentDate - startArguingDate) / 1000 + totalArgueTime);
-            document.getElementById('arguingTime').innerText = fromDurationInSecondsToString(durationInSeconds);
-        } else {
-            let durationInSeconds = Math.floor((currentDate - startDatingDate) / 1000 - totalArgueTime);
-            document.getElementById('datingTime').innerText = fromDurationInSecondsToString(durationInSeconds);
-        }
-    }
-
-    function createHeart() {
-        if (isArgue) {
-            return;
-        }
-        let heart = document.createElement('i');
-        heart.classList.add('fa', 'fa-heart', 'text-red-600', 'animate-bubble');
-        heart.style.left = Math.random() * window.innerWidth + 'px';
-        heart.style.position = 'absolute';
-        heart.style.zIndex = '3';
-        document.body.appendChild(heart);
-        setTimeout(function () {
-            document.body.removeChild(heart);
-        }, 6000);
-    }
 
     initTime();
     setInterval(updateCounters, 1000);
