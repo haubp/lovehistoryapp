@@ -85,20 +85,56 @@
       "PackagePath": "staticwebassets/css/v5-font-face.min.css"
     },
     {
-      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/dating.jpeg",
-      "PackagePath": "staticwebassets/dating.jpeg"
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating.jpeg",
+      "PackagePath": "staticwebassets/picture/dating.jpeg"
     },
     {
-      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/gian_nhau.jpg",
-      "PackagePath": "staticwebassets/gian_nhau.jpg"
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating1.jpeg",
+      "PackagePath": "staticwebassets/picture/dating1.jpeg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating1.jpg",
+      "PackagePath": "staticwebassets/picture/dating1.jpg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating2.jpeg",
+      "PackagePath": "staticwebassets/picture/dating2.jpeg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating2.jpg",
+      "PackagePath": "staticwebassets/picture/dating2.jpg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating3.jpeg",
+      "PackagePath": "staticwebassets/picture/dating3.jpeg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating4.jpeg",
+      "PackagePath": "staticwebassets/picture/dating4.jpeg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/dating5.jpeg",
+      "PackagePath": "staticwebassets/picture/dating5.jpeg"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/picture/gian_nhau.jpg",
+      "PackagePath": "staticwebassets/picture/gian_nhau.jpg"
     },
     {
       "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/qr.png",
       "PackagePath": "staticwebassets/qr.png"
     },
     {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/script/Views/LoveInfo/script.js",
+      "PackagePath": "staticwebassets/script/Views/LoveInfo/script.js"
+    },
+    {
       "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/tailwind.min.css",
       "PackagePath": "staticwebassets/tailwind.min.css"
+    },
+    {
+      "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/video/gian_nhau_video.mp4",
+      "PackagePath": "staticwebassets/video/gian_nhau_video.mp4"
     },
     {
       "Id": "/Users/haubui/Development/projects/LoveHistoryApp/LoveHistoryWebApp/wwwroot/webfonts/fa-brands-400.ttf",
