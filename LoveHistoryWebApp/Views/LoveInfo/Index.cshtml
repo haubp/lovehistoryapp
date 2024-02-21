@@ -50,16 +50,18 @@
     }
 
     .image-card:hover {
-        animation: image-selection 1s forwards;
+        animation: image-selection 3s;
     }
 
     @@keyframes image-selection {
         0% {
             transform: scale(1);
         }
-
-        100% {
+        50% {
             transform: scale(4);
+        }
+        100% {
+            transform: scale(1);
         }
     }
 </style>
@@ -76,18 +78,25 @@
             </div>
             <div class="flex m-20 justify-between">
                 @{
-                    for (int i = 1; i <= 5; i++)
+                    int totalJpg = 17;
+                    int totalJpeg = 5;
+                    Random random = new Random();
+                    List<int> list = Enumerable.Range(1, totalJpg).ToList();
+                    List<int> randomJpgIndex = list.OrderBy(x => random.Next()).Take(2).ToList();
+                    foreach (var index in randomJpgIndex) 
                     {
-                        string imagePath = $"/picture/dating{i}.jpeg";
+                        string imagePath = $"/picture/dating{index}.jpg";
                         <div class="w-20 h-20">
-                            <img class="flex-1 m-2 rounded-lg image-card object-cover" src="@imagePath" alt="Image @i">
+                            <img class="flex-1 m-2 rounded-lg image-card object-cover" src="@imagePath" alt="Image @index">
                         </div>
                     }
-                    for (int i = 1; i <= 2; i++)
+                    list = Enumerable.Range(1, totalJpeg).ToList();
+                    List<int> randomJpegIndex = list.OrderBy(x => random.Next()).Take(5).ToList();
+                    foreach (var index in randomJpegIndex) 
                     {
-                        string imagePath = $"/picture/dating{i}.jpg";
+                        string imagePath = $"/picture/dating{index}.jpeg";
                         <div class="w-20 h-20">
-                            <img class="flex-1 m-2 rounded-lg image-card object-cover" src="@imagePath" alt="Image @i">
+                            <img class="flex-1 m-2 rounded-lg image-card object-cover" src="@imagePath" alt="Image @index">
                         </div>
                     }
                 }

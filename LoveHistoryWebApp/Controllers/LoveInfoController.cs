@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Model;
-using Constants;
+using DTO;
 
 namespace Controllers
 {
@@ -20,7 +20,7 @@ namespace Controllers
         [Route("/loveinfo")]
         public IActionResult Index()
         {
-            LoveInfo info = new (Path.Combine(_env.WebRootPath, Constant.LoveInfoFileName));
+            LoveInfo info = LoveInfoModel.Query(_env);
             return View(info);
         }
 
@@ -28,7 +28,7 @@ namespace Controllers
         [Route("/loveinfo")]
         public IActionResult UpdateLoveInfo([FromBody] LoveInfo info)
         {
-            info.SaveToFile(Path.Combine(_env.WebRootPath, Constant.LoveInfoFileName));
+            LoveInfoModel.Save(_env, info);
             return Content(string.Empty);
         }
     }
